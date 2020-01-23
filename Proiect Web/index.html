@@ -3,25 +3,41 @@
 <head>
   <title> UPlan Insurance </title>
   <link rel="stylesheet" type="text/css" href="style.css";>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   </head>
 
-  <body>
-    <header>
-      <div class="main">
-        <div class="logo">
-          <img src="logo.png">
-          <nav class='navbar'>
-        <ul>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Plans</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-        </nav>
-          </ul>
-          </div>
-          <div class="button">
-            <a href="#" class="btn"><b>PRESENTATION</a>
+  <body style="background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(1.jpg);">
+
+      <div class="w3-sidebar w3-bar-block" style="width:25%">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+  <button class="w3-bar-item w3-button w3-purple w3-ripple" onclick="document.getElementById('id01').style.display='block'">Plans</button>
+    <a href="#" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">About</a>
+  </div>
+
+  <div style="margin-left:25%">
+
+
+<div class="w3-card-4">
+<img class="logo" src="logo.png" alt="logo">
+</div>
+          <button id="present" class="w3-button w3-ripple w3-wide w3-xlarge w3-hover-teal w3-white"> Presentation</button>
+
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <h2> Plans </h2>
+            </header>
+            <div class="w3-container">
+              <p> PLAN 1</p>
+              <p> PLAN 2</p>
+              <p> PLAN 3</p
+              </div>
+              <footer class="w3-container w3-teal">
+                <p> footer text </p>
+              </div>
             </div>
-      </header>
       </body>
       </html>
